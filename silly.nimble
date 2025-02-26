@@ -14,5 +14,5 @@ requires "nim >= 2.2.2"
 
 requires "cligen >= 1.7.9"
 
-task build, "build release binary":
-  exec "nim -d:release --opt:size c src/silly.nim"
+task static, "build static release binary":
+  exec "nim -d:release --opt:size --outdir:./build c src/silly.nim"

@@ -1,6 +1,7 @@
 import std/[strutils, sequtils]
 
 proc clap*(str: seq[string], clap: string = "👏"): string =
+  ## Clap👏a👏string👏
   str.mapIt(it.replace(" ", clap)).join(clap) & clap
 
 # Tests

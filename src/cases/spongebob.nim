@@ -1,6 +1,7 @@
-import std/[strutils, random]
+import std/strutils
 
 proc spongebob*(str: seq[string]): string =
+  ## sPoNgEbOb cAsE
   let s = str.join(" ")
   for i, c in s:
     if not c.isAlphaAscii:
